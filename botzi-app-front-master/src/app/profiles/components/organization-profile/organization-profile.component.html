@@ -7,20 +7,15 @@
     </div>  
     <div class="row">        
       <div class="col-md-8 order-md-1"> 
-        <div class="row">
-          <h4 class="mb-3" id="ceb">Update Your Details:</h4>  
-
-          <!--div class="col">
-          </div>
-          <div class="col">
-            <button class="btn btn-primary btn-lg btn-block" (click)="wantToUpdate()" type="submit">Click To Update</button> 
-          </div-->
-        </div >           
+                   
         <form class="needs-validation" novalidate="">
+          <div class="row">
+          <h4 class="mb-3" id="ceb">Your Details:</h4> 
+        </div >
           <div class="row">            
             <div class="col-md-6 mb-3">
               <label for="organizationName">Organization Name:</label>
-              <label >{{organizationName}}</label>
+              <label >{{organization.organizationName}}</label>
               <!--input required="" value="" placeholder="" id="organizationName" class="form-control" type="text">
               <div class="invalid-feedback">
                 Valid organization name is required.
@@ -28,33 +23,33 @@
             </div>
             <div class="col-md-6 mb-3">
               <label for="organizationNumber">Organization Number:</label>
-              <label >{{organizationNumber}}</label>
+              <label >{{organization.organizationNumber}}</label>
               <!--input type="text" class="form-control" id="organizationNumber" placeholder="" value="" required=""-->
             </div>
           </div>
           <div class="mb-3">
             <label for="oText">About The Organization:</label>
-            <label >{{oText}}</label>
+            <label >{{organization.oText}}</label>
             <!--input type="text" id="oText" required=""-->           
           </div>        
           <div class="mb-3">
             <label for="location">Organization Main Location:</label>
-            <label>{{location}}</label>
+            <label>{{organization.location}}</label>
             <!--input type="tel" class="form-control" id="location" placeholder=" " required=""-->            
           </div>          
           <div class="mb-3">
             <label for="contactName">Contact Name:</label>
-            <label >{{contactName}}</label>
+            <label >{{organization.contactName}}</label>
             <!--input type="text" id="contactName" required=""-->           
           </div>  
           <div class="mb-3">
             <label for="phoneNumber">Contact Phone Number:</label>
-            <label >{{phoneNumber}}</label>
+            <label >{{organization.phoneNumber}}</label>
             <!--input type="text" id="phoneNumber" type=tel  required=""-->           
           </div>  
           <div class="mb-3">
             <label for="mail">Mail Adress:</label>
-            <label>{{mail}}</label>
+            <label>{{organization.mail}}</label>
             <!--input type="text" class="form-control" id="mail" type="email" required="">
             <div class="invalid-feedback">
               Valid mail adress is required.
@@ -87,8 +82,6 @@
       </div>
     </div>
   </div-->
-    <div class=" col">
-      <h4 >My Campaigns:</h4>
-   </div>
+    
   </div>
 </section>

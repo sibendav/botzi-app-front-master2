@@ -40,6 +40,7 @@ import { AuthGuard } from './auth-guard.service';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { TeamComponent } from './components/team/team.component';
 import { VolunteerAreaesComponent } from './volunteer-areaes/volunteer-areaes.component';
+import { OrganizationsComponent } from './components/organizations/organizations.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent}
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     NavMenuComponent,
     ContactUsComponent,
     TeamComponent,
-    VolunteerAreaesComponent
+    VolunteerAreaesComponent,
+    OrganizationsComponent
   ],
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),
@@ -63,6 +65,7 @@ const appRoutes: Routes = [
     SignUpModule,
     CampaignsModule,
     UserFormsModule,
+    ProfilesModule,
     RouterModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
