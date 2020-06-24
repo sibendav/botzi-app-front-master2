@@ -10,8 +10,8 @@ import { OrganizationProfileComponent } from './components/organization-profile/
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  {path: 'profileVolunteer', component: VolunteerProfileComponent},
-  {path: 'profileOrganization', component: OrganizationProfileComponent}
+  {path: 'volunteer-profile', component: VolunteerProfileComponent},
+  {path: 'organization-profile', component: OrganizationProfileComponent}
 
 ];
 
