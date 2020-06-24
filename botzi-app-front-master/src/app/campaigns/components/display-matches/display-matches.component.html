@@ -1,0 +1,19 @@
+   <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span *ngIf="!appliedAlready">Your Matches</span>
+          <h2 *ngIf="!appliedAlready">Your Matches</h2>
+          <p *ngIf="!appliedAlready">Let's volunteer!</p>
+        </div>
+
+        <div class="row">
+
+          <app-available-match *ngFor="let campaign of campaignsList" [campaign] = "campaign" [appliedAlready] = "appliedAlready"></app-available-match>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+

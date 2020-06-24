@@ -1,0 +1,40 @@
+<section id="about-list" class="about-list" *ngIf="campaign">
+  <h2>{{campaign.campaignName}}</h2>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 order-2 order-lg-1">
+        <div class="icon-box mt-5 mt-lg-0">
+          <i class="bx bx-receipt"></i>
+          <h4>Description</h4>
+          <p>{{campaign.cText}}</p>
+        </div>
+        <div class="icon-box mt-5">
+          <i class="bx bx-cube-alt"></i>
+          <h4>Organization</h4>
+          <p>{{campaign.campaignNpo}}</p>
+        </div>
+        <div class="icon-box mt-5">
+          <i class="bx bx-images"></i>
+          <h4>Info</h4>
+          <p>{{"Dates:  "+campaign.startDate + " - " + campaign.endDate}}</p>
+        </div>
+        <div class="icon-box mt-5">
+          <i class="bx bx-shield"></i>
+          <h4>Location</h4>
+          <p>{{ campaign.city }}</p>
+        </div>
+      </div>
+      <div class="image col-lg-6 order-1 order-lg-2">
+        <img src="{{campaign.img_url}}">
+        <!--style='background-image: url("assets/img/about-list-img.jpg");'>-->
+        </div>
+    </div>
+
+  </div>
+  <div class="apply-btn">
+    <button routerLink="/volCampaigns" type="button" (click)="applyCampaign()">Apply</button>
+  </div>
+</section>
+
+
